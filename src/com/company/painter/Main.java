@@ -37,6 +37,7 @@ public class Main {
             System.exit(0);
         }
 
+
         double  cost = OrderedPaint.getPrice(area,quality);
 
         System.out.println("Thank you " + name + ", your order will be completed shortly.");
