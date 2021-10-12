@@ -19,7 +19,7 @@ public class Main {
             Error.error(e);
         }
 
-        System.out.println("Enter the wall area in square metres.");
+        System.out.println("Enter the wall area in squardasde metres.");
         try{
              area = scanner.nextDouble();
         } catch ( Exception e){
