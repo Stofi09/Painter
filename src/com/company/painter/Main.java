@@ -47,14 +47,15 @@ public class Main {
         /*for (int i = 0; i < 30; i++){
             System.out.println("Computing");
         }
-        int[] numbers = {1,2,3,4,5,6,7,8,9,10};
+        int[] numbers =     {1,2,3,4,5,6,7,8,9,10};
         int sumOfTheNumbers = 0;
         for(int j : numbers){
             sumOfTheNumbers += j;
-        }*/
+        }
         System.out.println("That is the sum: "+sumOfTheNumbers);
         System.out.println("Your order is ready, the paint will cost: " + order.getCost() + "£");
-
+        */
+        
         /* Training stuffs
         if (customer.getType().name().equalsIgnoreCase("SILVER")){
             System.out.println("You have to spend 5000 more to become a GOLD level customer");
