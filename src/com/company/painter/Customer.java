@@ -7,9 +7,11 @@ public class Customer {
 
     private String name;
     private ArrayList<Order> orders = new ArrayList<>();
+    private Enum type;
 
     public Customer (String name){
         this.name = name;
+        this.type = CustomerType.BRONZE;
     }
 
     public void addOrder(Order order){
@@ -28,6 +30,7 @@ public class Customer {
         return "Customer{" +
                 "name='" + name + '\'' +
                 ", orders=" + orders +
+                ", type=" + type +
                 '}';
     }
 }
