@@ -45,7 +45,13 @@ public class Main {
         System.out.println("Thank you " + customer.getName() + ", your order will be completed shortly.");
         Thread.sleep(3000);
         System.out.println("Your order is ready, the paint will cost: " + order.getCost() + "£");
-
+        if (customer.getType().name().equalsIgnoreCase("SILVER")){
+            System.out.println("You have to spend 5000 more to become a GOLD level customer");
+        }else if (customer.getType().name().equalsIgnoreCase("GOLD")){
+            System.out.println("THANK YOU! Because of you, we can all go to the Bahamas!");
+        }else {
+            System.out.println("You have to spend more man!");
+        }
         System.out.println(CustomerList.getList());
 
 
