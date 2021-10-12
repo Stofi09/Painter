@@ -38,11 +38,15 @@ public class Main {
         }
 
 
-        double  cost = PaintPriceCalculator.getPrice(area,quality);
+        Order order = new Order( PaintPriceCalculator.getPrice(area,quality),quality);
+        Customer customer = new Customer(name);
+        customer.addOrder(order);
 
-        System.out.println("Thank you " + name + ", your order will be completed shortly.");
+        System.out.println("Thank you " + customer.getName() + ", your order will be completed shortly.");
         Thread.sleep(3000);
-        System.out.println("Your order is ready, the paint will cost: " + cost + "£");
+        System.out.println("Your order is ready, the paint will cost: " + order.getCost() + "£");
+
+
     }
 
 }
