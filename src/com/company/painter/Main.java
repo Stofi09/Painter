@@ -46,6 +46,7 @@ public class Main {
         Thread.sleep(3000);
         System.out.println("Your order is ready, the paint will cost: " + order.getCost() + "£");
 
+        /* Training stuffs
         if (customer.getType().name().equalsIgnoreCase("SILVER")){
             System.out.println("You have to spend 5000 more to become a GOLD level customer");
         }else if (customer.getType().name().equalsIgnoreCase("GOLD")){
@@ -60,8 +61,11 @@ public class Main {
             case "GOLD" -> "Yeehah!";
             default -> "Nothing";
         };
+
+
         System.out.println("Something: "+""+something);
 
+        */
 
     }
 
