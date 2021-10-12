@@ -1,8 +1,8 @@
 package com.company.painter;
 
-public class OrderedPaint {
+public class PaintPriceCalculator {
 
-    private OrderedPaint(){}
+    private PaintPriceCalculator(){}
 
     private static final double TWENTY_DISCOUNT = 0.8;
     private static final double THIRTY_DISCOUNT = 0.7;

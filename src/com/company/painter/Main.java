@@ -38,7 +38,7 @@ public class Main {
         }
 
 
-        double  cost = OrderedPaint.getPrice(area,quality);
+        double  cost = PaintPriceCalculator.getPrice(area,quality);
 
         System.out.println("Thank you " + name + ", your order will be completed shortly.");
         Thread.sleep(3000);
