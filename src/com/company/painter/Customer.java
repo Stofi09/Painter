@@ -39,5 +39,10 @@ public class Customer {
           cost += this.orders.get(i).getCost();
         }
         System.out.println("this is the iterating: "+cost);
+        changeType(cost);
+    }
+    private void changeType(double cost){
+        if (cost < 15000 && cost > 10000) this.type = CustomerType.SILVER;
+        else if (cost > 15000) this.type = CustomerType.GOLD;
     }
 }
