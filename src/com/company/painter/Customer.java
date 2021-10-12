@@ -36,9 +36,10 @@ public class Customer {
     }
     private void  sumCustomerSpending(){
         double cost = 0;
-        for (int i =0; i< this.orders.size(); i++){
-          cost += this.orders.get(i).getCost();
+        for(Order o :orders ){
+            cost += o.getCost();
         }
+
         System.out.println("this is the iterating : "+cost);
         changeType(cost);
     }

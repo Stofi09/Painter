@@ -66,6 +66,9 @@ public class Main {
         System.out.println("Something: "+""+something);
 
         */
+        for(int i = 0; i < customer.listOders().size(); i++){
+            System.out.println(customer.listOders().get(i));
+        }
 
     }
 
