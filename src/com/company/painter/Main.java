@@ -44,6 +44,15 @@ public class Main {
         CustomerList.addCustomer(customer);
         System.out.println("Thank you " + customer.getName() + ", your order will be completed shortly.");
         Thread.sleep(3000);
+        /*for (int i = 0; i < 30; i++){
+            System.out.println("Computing");
+        }
+        int[] numbers = {1,2,3,4,5,6,7,8,9,10};
+        int sumOfTheNumbers = 0;
+        for(int j : numbers){
+            sumOfTheNumbers += j;
+        }*/
+        System.out.println("That is the sum: "+sumOfTheNumbers);
         System.out.println("Your order is ready, the paint will cost: " + order.getCost() + "£");
 
         /* Training stuffs
