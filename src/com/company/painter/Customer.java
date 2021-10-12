@@ -1,6 +1,5 @@
 package com.company.painter;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Customer {
@@ -16,6 +15,7 @@ public class Customer {
 
     public void addOrder(Order order){
         this.orders.add(order);
+        sumCustomerSpending();
     }
     public ArrayList<Order> listOders(){
         return this.orders;
@@ -32,5 +32,12 @@ public class Customer {
                 ", orders=" + orders +
                 ", type=" + type +
                 '}';
+    }
+    private void  sumCustomerSpending(){
+        double cost = 0;
+        for (int i =0; i< this.orders.size(); i++){
+          cost += this.orders.get(i).getCost();
+        }
+        System.out.println("this is the iterating: "+cost);
     }
 }
