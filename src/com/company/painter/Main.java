@@ -65,11 +65,25 @@ public class Main {
 
         System.out.println("Something: "+""+something);
 
-        */
+        boolean playAgain = true;
+        int count = 0;
+        while(playAgain){
+            if(count > 10){
+                playAgain = false;
+            }
+            System.out.println(count++);
+        }
+        count = 0;
+        do{
+            if(count>10){
+                playAgain = true;
+            }
+        }while (!playAgain);
+
         for(int i = 0; i < customer.listOders().size(); i++){
             System.out.println(customer.listOders().get(i));
         }
-
+        */
     }
 
 }
