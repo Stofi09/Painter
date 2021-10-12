@@ -12,7 +12,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter your name.");
+        System.out.println("Please enter your name!");
         try {
              name = scanner.next();
         } catch (Exception e){
