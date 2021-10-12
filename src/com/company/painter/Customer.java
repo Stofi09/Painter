@@ -39,7 +39,7 @@ public class Customer {
         for (int i =0; i< this.orders.size(); i++){
           cost += this.orders.get(i).getCost();
         }
-        System.out.println("this is the iterating: "+cost);
+        System.out.println("this is the iterating : "+cost);
         changeType(cost);
     }
     private void changeType(double cost){
