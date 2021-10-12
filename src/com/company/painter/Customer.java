@@ -16,6 +16,7 @@ public class Customer {
     public void addOrder(Order order){
         this.orders.add(order);
         sumCustomerSpending();
+        checkCustomerType();
     }
     public ArrayList<Order> listOders(){
         return this.orders;
@@ -44,5 +45,13 @@ public class Customer {
     private void changeType(double cost){
         if (cost < 15000 && cost > 10000) this.type = CustomerType.SILVER;
         else if (cost > 15000) this.type = CustomerType.GOLD;
+    }
+
+    public Enum getType(){
+        return this.type;
+    }
+    private void checkCustomerType(){
+        if (this.type.name().equalsIgnoreCase("SILVER")) System.out.println(this.name +"! Thank you for being a Silver level customer!");
+        if (this.type.name().equalsIgnoreCase("GOLD")) System.out.println(this.name +"! Thank you for being a Gold level customer!");
     }
 }

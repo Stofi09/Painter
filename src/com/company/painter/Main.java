@@ -45,6 +45,7 @@ public class Main {
         System.out.println("Thank you " + customer.getName() + ", your order will be completed shortly.");
         Thread.sleep(3000);
         System.out.println("Your order is ready, the paint will cost: " + order.getCost() + "£");
+
         System.out.println(CustomerList.getList());
 
 
