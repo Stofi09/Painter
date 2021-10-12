@@ -1,2 +1,5 @@
-package com.company.painter;public class CustomerList {
+package com.company.painter;
+
+public class CustomerList {
+
 }
