@@ -18,4 +18,12 @@ public class Order {
     public String getQuality(){
         return this.quality;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "cost=" + cost +
+                ", quality='" + quality + '\'' +
+                '}';
+    }
 }
