@@ -54,7 +54,13 @@ public class Main {
             System.out.println("You have to spend more man!");
         }
 
-        System.out.println(CustomerList.getList());
+        String something = switch(customer.getType().name()){
+            case "BRONZE" -> "just a bronze";
+            case "SILVER" -> "Not bad";
+            case "GOLD" -> "Yeehah!";
+            default -> "Nothing";
+        };
+        System.out.println("Something: "+""+something);
 
 
     }
