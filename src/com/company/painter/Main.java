@@ -84,6 +84,8 @@ public class Main {
             System.out.println(customer.listOders().get(i));
         }
         */
+        // Best practice: Known amount -> For loop
+        // Not known -> While
     }
 
 }
