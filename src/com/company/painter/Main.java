@@ -54,27 +54,21 @@ public class Main {
         try{
             String message = scanner.next();
             if (message.equalsIgnoreCase("yes")){
-                isReceiptRequired = true;
-                System.out.println(isReceiptRequired);
+                makeReceipt(customer);
             } else {
-                isReceiptRequired = false;
-                System.out.println(isReceiptRequired);
+                System.out.println("No receipt for you!");
             }
         }catch (Exception e){
             Error.error(e);
         }
 
-        makeReceipt(isReceiptRequired,customer);
-        
+
+
         System.out.println("Thank you " + customer.getName() + ", your order will be completed shortly.");
         Thread.sleep(3000);
 
     }
-    private static void makeReceipt(boolean isRequired, Customer customer){
-        if (isRequired){
+    private static void makeReceipt( Customer customer){
             System.out.println("your receipt is on the way "+ customer.getName());
-        }else {
-            System.out.println("No receipt for you");
-        }
     }
 }
