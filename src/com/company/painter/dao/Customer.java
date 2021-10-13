@@ -8,6 +8,7 @@ public class Customer {
     private String name;
     private List<Order> orders = new ArrayList<>();
     private Enum type;
+    private boolean hasCard = false;
 
     public Customer (String name){
         this.name = name;
@@ -47,6 +48,14 @@ public class Customer {
     private void changeType(double cost){
         if (cost < 15000 && cost > 10000) this.type = CustomerType.SILVER;
         else if (cost > 15000) this.type = CustomerType.GOLD;
+    }
+
+    public boolean getCard() {
+        return hasCard;
+    }
+
+    public void setCard() {
+        this.hasCard = true;
     }
 
     public Enum getType(){

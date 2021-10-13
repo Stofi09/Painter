@@ -44,11 +44,27 @@ public class Main {
             System.exit(0);
         }
 
-
         Order order = new Order( PaintPriceCalculator.getPrice(area,quality),quality);
         Customer customer = new Customer(name);
         customer.addOrder(order);
         CustomerList.addCustomer(customer);
+
+        System.out.println("Do you have a card or would you like one? Type \"yes\" if you want or have.");
+        try{
+            String message = scanner.next();
+            if (message.equalsIgnoreCase("yes")){
+                if(customer.getCard()){
+                    System.out.println("Thank you for you card.");
+                }else {
+                    customer.setCard();
+                    System.out.println("Here is your new card.");
+                }
+            } else {
+                System.out.println("No card for you!");
+            }
+        }catch (Exception e){
+            Error.error(e);
+        }
 
         System.out.println("Would you like a receipt? Type \"yes\" if you want.");
         try{
@@ -71,4 +87,5 @@ public class Main {
     private static void makeReceipt( Customer customer){
             System.out.println("your receipt is on the way "+ customer.getName());
     }
+
 }
