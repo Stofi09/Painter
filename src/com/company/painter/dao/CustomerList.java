@@ -1,11 +1,12 @@
 package com.company.painter.dao;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomerList {
 
 
-    private static ArrayList<Customer> customers = new ArrayList<>();
+    private static List<Customer> customers = new ArrayList<>();
     private static CustomerList ListInstance = null;
 
     private CustomerList(){}
@@ -16,7 +17,7 @@ public class CustomerList {
         }
         customers.add(customer);
     }
-    public static ArrayList<Customer> getList(){
+    public static List<Customer> getList(){
         return customers;
     }
 }

@@ -1,11 +1,12 @@
 package com.company.painter.dao;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Customer {
 
     private String name;
-    private ArrayList<Order> orders = new ArrayList<>();
+    private List<Order> orders = new ArrayList<>();
     private Enum type;
 
     public Customer (String name){
@@ -18,7 +19,7 @@ public class Customer {
         sumCustomerSpending();
         checkCustomerType();
     }
-    public ArrayList<Order> listOders(){
+    public List<Order> listOders(){
         return this.orders;
     }
 
