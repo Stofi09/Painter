@@ -5,6 +5,7 @@ import com.company.painter.dao.Customer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Training {
 
@@ -23,7 +24,7 @@ public class Training {
         techClass.forEach(customer -> System.out.println(customer));
 */
         Customer cus = new Customer("asd");
-        LinkedList<Customer> techClass2 = new LinkedList<>();
+        List<Customer> techClass2 = new LinkedList<>();
 
         techClass2.add(cus);
         techClass2.add(cus);
