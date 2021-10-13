@@ -35,6 +35,19 @@ public class Training {
             }
             System.out.println();
         }*/
+        String[][] mineField = new String[10][10];
+        for (int i = 0; i < mineField.length; i++){
+            for (int j = 0; j< mineField[i].length; j++){
+                int random = (int) (Math.random()*10);
+                if (random > 7){
+                    mineField[i][j] = "MINE!";
+                }else {
+                    mineField[i][j] = "Free";
+                }
+                System.out.print(mineField[i][j] + "|");
+            }
+            System.out.println();
+        }
         /*
         int [][] myNumbers = {{1,2,3,4},{5,6,7,8,9,10}};
         for (int[] i : myNumbers){
