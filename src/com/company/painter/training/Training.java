@@ -2,10 +2,7 @@ package com.company.painter.training;
 
 import com.company.painter.dao.Customer;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Training {
 
@@ -22,7 +19,7 @@ public class Training {
         techClass.add(cus);
         System.out.println(techClass.get(10));
         techClass.forEach(customer -> System.out.println(customer));
-*/
+*//*
         Customer cus = new Customer("asd");
         List<Customer> techClass2 = new LinkedList<>();
 
@@ -32,7 +29,12 @@ public class Training {
         techClass2.add(cus);
         techClass2.add(cus);
         techClass2.forEach(customer -> System.out.println(customer));
-
+*/
+        Collection<String> coll = new ArrayList<>();
+        coll.add("Zebra");
+        coll.add("Lion");
+        coll.add("Eagle");
+        coll.forEach(String -> System.out.println(String.contains("e")));
 
       /*  String[] string = new String[6];
         System.out.println(string.length);
