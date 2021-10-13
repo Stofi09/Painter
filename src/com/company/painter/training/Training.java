@@ -8,6 +8,11 @@ public class Training {
 
     public static void main(String[] args){
             wednesdayTraining();
+            proba();
+    }
+
+    private static void proba(){
+        System.out.println("sikerult");
     }
     private static void wednesdayTraining(){
    /*     ArrayList<Customer> techClass = new ArrayList<>();
