@@ -1,11 +1,52 @@
 package com.company.painter.training;
 
+import java.util.Arrays;
+
 public class Training {
 
     public static void main(String[] args){
+            wednesdayTraining();
+    }
+    private static void wednesdayTraining(){
+      /*  String[] string = new String[6];
+        System.out.println(string.length);
+       // string[6]  = "valami";
+        string[4] = "delux";
+        string[5] = "basic";
+        for(String s : string){
+           // s = "Gareth" => It doesnt change the array! Only String s
+            System.out.println(s);
+        }*/
+        /*
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
 
+        int count = 0;
+        int [][] gridCounter = new int[10][10];
+
+
+        // This iterate over the outer loop
+        for(int i =0; i < gridCounter.length; i++){
+            for(int j= 0;j < gridCounter[i].length; j++){ //This goes rtough the inner loop
+                gridCounter[i][j] = ++count;
+                System.out.print(gridCounter[i][j]+"|");
+            }
+            System.out.println();
+        }*/
+        /*
+        int [][] myNumbers = {{1,2,3,4},{5,6,7,8,9,10}};
+        for (int[] i : myNumbers){
+            for(int j : i){
+                System.out.println(j);
+            }
+        }*/
     }
     private static void tuesdayTraining(){
+        int[] asd = {1,2,3};
+
+
           /*for (int i = 0; i < 30; i++){
             System.out.println("Computing");
         }
