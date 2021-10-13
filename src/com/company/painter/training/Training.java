@@ -1,6 +1,10 @@
 package com.company.painter.training;
 
+import com.company.painter.dao.Customer;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class Training {
 
@@ -8,6 +12,27 @@ public class Training {
             wednesdayTraining();
     }
     private static void wednesdayTraining(){
+   /*     ArrayList<Customer> techClass = new ArrayList<>();
+
+        techClass.add(cus);
+        techClass.add(cus);
+        techClass.add(cus);
+        techClass.add(cus);
+        techClass.add(cus);
+        System.out.println(techClass.get(10));
+        techClass.forEach(customer -> System.out.println(customer));
+*/
+        Customer cus = new Customer("asd");
+        LinkedList<Customer> techClass2 = new LinkedList<>();
+
+        techClass2.add(cus);
+        techClass2.add(cus);
+        techClass2.add(cus);
+        techClass2.add(cus);
+        techClass2.add(cus);
+        techClass2.forEach(customer -> System.out.println(customer));
+
+
       /*  String[] string = new String[6];
         System.out.println(string.length);
        // string[6]  = "valami";
@@ -35,7 +60,7 @@ public class Training {
             }
             System.out.println();
         }*/
-        String[][] mineField = new String[10][10];
+     /*   String[][] mineField = new String[10][10];
         // Mine field generator
         for (int i = 0; i < mineField.length; i++){
             for (int j = 0; j< mineField[i].length; j++){
