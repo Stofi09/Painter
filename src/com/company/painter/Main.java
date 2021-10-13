@@ -78,8 +78,6 @@ public class Main {
             Error.error(e);
         }
 
-
-
         System.out.println("Thank you " + customer.getName() + ", your order will be completed shortly.");
         Thread.sleep(3000);
 
