@@ -55,7 +55,7 @@ public class Main {
         System.out.println("That is the sum: "+sumOfTheNumbers);
         System.out.println("Your order is ready, the paint will cost: " + order.getCost() + "£");
         */
-        
+
         /* Training stuffs
         if (customer.getType().name().equalsIgnoreCase("SILVER")){
             System.out.println("You have to spend 5000 more to become a GOLD level customer");
