@@ -1,4 +1,4 @@
-package com.company.painter;
+package com.company.painter.dao;
 
 import java.util.ArrayList;
 

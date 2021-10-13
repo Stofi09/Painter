@@ -1,4 +1,4 @@
-package com.company.painter;
+package com.company.painter.dao;
 
 public enum CustomerType {
     BRONZE("Bronze"),

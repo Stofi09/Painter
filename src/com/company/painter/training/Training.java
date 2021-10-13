@@ -36,6 +36,7 @@ public class Training {
             System.out.println();
         }*/
         String[][] mineField = new String[10][10];
+        // Mine field generator
         for (int i = 0; i < mineField.length; i++){
             for (int j = 0; j< mineField[i].length; j++){
                 int random = (int) (Math.random()*10);

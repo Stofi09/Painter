@@ -1,4 +1,4 @@
-package com.company.painter;
+package com.company.painter.error;
 
 public class Error {
 

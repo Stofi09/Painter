@@ -1,5 +1,11 @@
 package com.company.painter;
 
+import com.company.painter.dao.Customer;
+import com.company.painter.dao.CustomerList;
+import com.company.painter.dao.Order;
+import com.company.painter.error.Error;
+import com.company.painter.paintCalculations.PaintPriceCalculator;
+
 import java.util.Scanner;
 
 public class Main {
